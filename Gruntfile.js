@@ -38,18 +38,18 @@ module.exports = function (grunt) {
     concat: {
       js: {
         src: ['js/*.js', 'menu/*.js'],
-        dest: 'dist/js/bundle.js'
+        dest: 'dist/bundle.js'
       },
       css: {
         src: ['css/*.css'],
-        dest: 'dist/css/bundle.css'
+        dest: 'dist/bundle.css'
       }
     },
     uglify: {
-      'dist/js/bundle.min.js': 'dist/js/bundle.js'
+      'dist/bundle.min.js': 'dist/bundle.js'
     },
     cssmin: {
-      'dist/css/bundle.min.css': 'dist/css/bundle.css'
+      'dist/bundle.min.css': 'dist/bundle.css'
     },
     useminPrepare: {
       html: 'index.html',
@@ -61,7 +61,7 @@ module.exports = function (grunt) {
       html: ['dist/index.html']
     },
     clean: {
-      end: ['dist/css/bundle.css', 'dist/js/bundle.js', '.tmp']
+      end: ['dist/bundle.css', 'dist/bundle.js', '.tmp']
     }, 
   });
 
@@ -77,5 +77,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
 
   grunt.registerTask('lint', ['htmlhint', 'csslint', 'eslint']);
-  grunt.registerTask('release', ['copy:html', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin', 'htmlmin', 'clean:end']);
+  grunt.registerTask('build', ['copy:html', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin', 'htmlmin', 'clean:end']);
 };
