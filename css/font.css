@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    font-family: Microsoft YaHei;
+    font-size: 0.9em;
+    height: 100%;
+    width: 100%;
+}
+.notepad-dlg-mask {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.notepad-dlg-font {
+    z-index: 10;
+}
+.notepad-dlg-font .dialogbox {
+    height: 498px;
+    width: 438px;
+}
+.notepad-dlgbox {
+    border: 1px solid #0f7fd6;
+    box-shadow: 10px 10px 10px #d6d6d6;
+    box-sizing: border-box;
+    cursor: default;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    user-select: none;
+}
+.notepad-dlg-titlebar {
+    background-color: #fff;
+    font-size: 1.3em;
+    height: 30px;
+}
+.notepad-dlg-titlebar .title {
+    left: 10px;
+    line-height: 30px;
+    position: absolute;
+}
+.notepad-dlg-titlebar .close-btn {
+    color: gray;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 30px;
+}
+.notepad-dlg-titlebar .close-btn:hover {
+    background-color: red;
+    color: white;
+}
+.notepad-dlg-font .main {
+    height: 466px; 
+}
+.notepad-dlg-main {
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    padding: 12px;
+    position: relative;
+}
+.notepad-dlg-font .main .font-family,
+.notepad-dlg-font .main .font-style {
+    display: inline-block;
+    margin-right: 16px;
+}
+.notepad-dlg-font .main .sample {
+    border-color: white;
+    height: 78px;
+    /* margin-left: 196px; */
+    margin-top: 28px;
+    width: 194px;
+}
+.notepad-dlg-font .main .script {
+    /* margin-left: 196px; */
+    margin-top: 12px;
+}
+.notepad-dlg-font .main select {
+    height: 22px;
+    width: 214px;
+}
+.notepad-dlg-font .main .font-size {
+    display: inline-block;
+}
+.notepad-dlg-font .main .btn-ok {
+    bottom: 10px;
+    position: absolute;
+    right: 110px;
+}
+.notepad-dlg-font .main .btn-cancel {
+    bottom: 10px;
+    position: absolute;
+    right: 16px;
+}
+.notepad-dlg-main .btn {
+    height: 28px;
+    width: 86px;
+}
